@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  airflow:
+    image: apache/airflow:2.7.2
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: standalone
+    env_file:
+      - .env
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+
+

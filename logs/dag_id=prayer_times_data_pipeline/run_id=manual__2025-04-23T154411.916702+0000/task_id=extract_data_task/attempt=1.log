@@ -1,0 +1,25 @@
+[2025-04-23T15:44:17.757+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prayer_times_data_pipeline.extract_data_task manual__2025-04-23T15:44:11.916702+00:00 [queued]>
+[2025-04-23T15:44:17.763+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prayer_times_data_pipeline.extract_data_task manual__2025-04-23T15:44:11.916702+00:00 [queued]>
+[2025-04-23T15:44:17.763+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-04-23T15:44:17.782+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_data_task> on 2025-04-23 15:44:11.916702+00:00
+[2025-04-23T15:44:17.799+0000] {standard_task_runner.py:57} INFO - Started process 599 to run task
+[2025-04-23T15:44:17.802+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'prayer_times_data_pipeline', 'extract_data_task', 'manual__2025-04-23T15:44:11.916702+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/Extract.py', '--cfg-path', '/tmp/tmpv7dske3t']
+[2025-04-23T15:44:17.804+0000] {standard_task_runner.py:85} INFO - Job 33: Subtask extract_data_task
+[2025-04-23T15:44:17.847+0000] {task_command.py:416} INFO - Running <TaskInstance: prayer_times_data_pipeline.extract_data_task manual__2025-04-23T15:44:11.916702+00:00 [running]> on host d02bd472f10d
+[2025-04-23T15:44:18.040+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='prayer_times_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T15:44:11.916702+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T15:44:11.916702+00:00'
+[2025-04-23T15:44:18.310+0000] {Extract.py:49} INFO - Data for 2025-01 saved to /opt/airflow/data/prayer_times_2025_01.csv
+[2025-04-23T15:44:18.430+0000] {Extract.py:49} INFO - Data for 2025-02 saved to /opt/airflow/data/prayer_times_2025_02.csv
+[2025-04-23T15:44:18.583+0000] {Extract.py:49} INFO - Data for 2025-03 saved to /opt/airflow/data/prayer_times_2025_03.csv
+[2025-04-23T15:44:18.735+0000] {Extract.py:49} INFO - Data for 2025-04 saved to /opt/airflow/data/prayer_times_2025_04.csv
+[2025-04-23T15:44:18.883+0000] {Extract.py:49} INFO - Data for 2025-05 saved to /opt/airflow/data/prayer_times_2025_05.csv
+[2025-04-23T15:44:19.022+0000] {Extract.py:49} INFO - Data for 2025-06 saved to /opt/airflow/data/prayer_times_2025_06.csv
+[2025-04-23T15:44:19.177+0000] {Extract.py:49} INFO - Data for 2025-07 saved to /opt/airflow/data/prayer_times_2025_07.csv
+[2025-04-23T15:44:19.334+0000] {Extract.py:49} INFO - Data for 2025-08 saved to /opt/airflow/data/prayer_times_2025_08.csv
+[2025-04-23T15:44:19.474+0000] {Extract.py:49} INFO - Data for 2025-09 saved to /opt/airflow/data/prayer_times_2025_09.csv
+[2025-04-23T15:44:19.643+0000] {Extract.py:49} INFO - Data for 2025-10 saved to /opt/airflow/data/prayer_times_2025_10.csv
+[2025-04-23T15:44:19.787+0000] {Extract.py:49} INFO - Data for 2025-11 saved to /opt/airflow/data/prayer_times_2025_11.csv
+[2025-04-23T15:44:19.933+0000] {Extract.py:49} INFO - Data for 2025-12 saved to /opt/airflow/data/prayer_times_2025_12.csv
+[2025-04-23T15:44:19.934+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-04-23T15:44:19.939+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=prayer_times_data_pipeline, task_id=extract_data_task, execution_date=20250423T154411, start_date=20250423T154417, end_date=20250423T154419
+[2025-04-23T15:44:19.984+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-04-23T15:44:19.999+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
