@@ -86,14 +86,13 @@ dag_instance = prayer_times_pipeline()
 
 """
 # # To test:
-#Do a Dev branch
-# Run all the application on AWS EKS Kuberenets + Terraform or Airflow on Kuberentes #https://www.youtube.com/watch?v=ueo__msW2Os
+ 
+# Run all the application on AWS EKS Kuberenets + Terraform or Airflow on Kuberentes  
 #S3Hook: Replace boto3 with Airflow’s native S3Hook or S3FileTransformOperator.
 # email alerts: Once the job is completed or if there is a problem with template. 
 # email sending the jobs by email. 
 #put the metadata of airflow on metadata database(postegre 
-#Learn XCom	Pass data between tasks (e.g., file name, success status)."""
-
+ 
 
 #do a power bi that will show those data based on  a filter by city.
 
